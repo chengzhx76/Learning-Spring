@@ -1,6 +1,5 @@
 package com.github.chengzhx76;
 
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,7 +19,6 @@ public class Beans {
     }
 
     public static void main(String[] args) {
-        BeanFactory
     }
 
 
