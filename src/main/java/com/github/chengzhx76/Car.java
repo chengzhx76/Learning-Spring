@@ -26,4 +26,13 @@ public class Car {
         this.speed = speed;
         return this;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Car{");
+        sb.append("brand='").append(brand).append('\'');
+        sb.append(", speed='").append(speed).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
