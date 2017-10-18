@@ -1,4 +1,4 @@
-package com.github.chengzhx76;
+package com.github.chengzhx76.spring;
 
 /**
  * Desc:
