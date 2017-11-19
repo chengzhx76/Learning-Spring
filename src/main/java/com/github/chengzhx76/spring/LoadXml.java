@@ -1,4 +1,4 @@
-package com.github.chengzhx76;
+package com.github.chengzhx76.spring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,6 +13,7 @@ public class LoadXml {
         /*ClassPathResource resource = new ClassPathResource("/bean.xml");
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+
         reader.loadBeanDefinitions(resource);
         Car car = (Car) factory.getBean("car");
         */

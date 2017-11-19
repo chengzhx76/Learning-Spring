@@ -1,4 +1,4 @@
-package com.github.chengzhx76;
+package com.github.chengzhx76.spring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

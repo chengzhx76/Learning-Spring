@@ -30,6 +30,12 @@
     </dependency>
     <!-- log4J -->
     <dependency>
+      <groupId>com.xiaoleilu</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <!-- log4J -->
+    <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>${log4j.version}</version>
