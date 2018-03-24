@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  * Desc:
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class IndexController {
     @RequestMapping("index")
-    public String index(HttpServletRequest request) {
+    public String index(HttpServletRequest request, HttpSession session) {
         System.out.println("------------------");
         return "index";
     }
