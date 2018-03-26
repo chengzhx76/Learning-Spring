@@ -20,7 +20,7 @@ public abstract class AbstractBeanFactory implements BeanFactory {
     }
 
     @Override
-    public void registerBeanDefinition(String name, BeanDefinition beanDefinition) {
+    public void registerBeanDefinition(String name, BeanDefinition beanDefinition) throws Exception {
         /**
          * 通过反射来实例化bean,不在是外部实例化好在放进来，而是传入类的全路径来创建实例
          * 有子类来实现类的实例（更灵活？）
@@ -35,5 +35,5 @@ public abstract class AbstractBeanFactory implements BeanFactory {
      * @param beanDefinition
      * @return
      */
-    protected abstract Object doCreateBean(BeanDefinition beanDefinition);
+    protected abstract Object doCreateBean(BeanDefinition beanDefinition) throws Exception;
 }

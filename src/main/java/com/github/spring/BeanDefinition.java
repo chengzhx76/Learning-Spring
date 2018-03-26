@@ -1,7 +1,7 @@
 package com.github.spring;
 
 /**
- * @desc:
+ * @desc: bean的元数据
  * @author: hp
  * @date: 2018/3/24
  */
@@ -12,6 +12,8 @@ public class BeanDefinition {
     private String beanClassName;
 
     private Class beanClass;
+
+    private PropertyValues propertyValues;
 
     public void setBean(Object bean) {
         this.bean = bean;
@@ -36,5 +38,13 @@ public class BeanDefinition {
 
     public Class getBeanClass() {
         return beanClass;
+    }
+
+    public void setPropertyValues(PropertyValues propertyValues) {
+        this.propertyValues = propertyValues;
+    }
+
+    public PropertyValues getPropertyValues() {
+        return propertyValues;
     }
 }
