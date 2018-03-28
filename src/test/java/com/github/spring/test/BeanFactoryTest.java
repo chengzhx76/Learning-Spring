@@ -3,7 +3,6 @@ package com.github.spring.test;
 import com.github.spring.BeanDefinition;
 import com.github.spring.PropertyValue;
 import com.github.spring.PropertyValues;
-import com.github.spring.factory.AutowrieCapableBeanFactory;
 import com.github.spring.factory.BeanFactory;
 
 /**
