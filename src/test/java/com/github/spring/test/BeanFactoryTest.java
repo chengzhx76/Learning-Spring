@@ -1,10 +1,12 @@
 package com.github.spring.test;
 
 import com.github.spring.BeanDefinition;
-import com.github.spring.PropertyValue;
-import com.github.spring.PropertyValues;
 import com.github.spring.factory.AutowrieCapableBeanFactory;
 import com.github.spring.factory.BeanFactory;
+import com.github.spring.io.ResourceLoader;
+import com.github.spring.xml.XmlBeanDefinitionReader;
+
+import java.util.Map;
 
 /**
  * @desc:
@@ -14,22 +16,18 @@ import com.github.spring.factory.BeanFactory;
 public class BeanFactoryTest {
 
     public static void main(String[] args) throws Exception {
-        // 1.初始化BeanFactory
+        // 1.读取配置
+        XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(new ResourceLoader());
+        xmlBeanDefinitionReader.loadBeanDefinition("cheng.xml");
+
+        // 2.初始化beanFactory并注册bean
+        Map<String, BeanDefinition> registry = xmlBeanDefinitionReader.getRegistry();
         BeanFactory beanFactory = new AutowrieCapableBeanFactory();
+        for (Map.Entry<String, BeanDefinition> beanDefinitionEntry : registry.entrySet()) {
+            beanFactory.registerBeanDefinition(beanDefinitionEntry.getKey(), beanDefinitionEntry.getValue());
+        }
 
-        // 2.bean定义
-        BeanDefinition beanDefinition = new BeanDefinition();
-        beanDefinition.setBeanClassName("com.github.spring.test.HelloWorldService");
-
-        // 3.设置属性值
-        PropertyValues propertyValues = new PropertyValues();
-        propertyValues.addPropertyValue(new PropertyValue("text", "Hello World !~~~"));
-        beanDefinition.setPropertyValues(propertyValues);
-
-        // 4.注入bean
-        beanFactory.registerBeanDefinition("helloWorldService", beanDefinition);
-
-        // 5.获取bean
+        // 3.获取bean
         HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
         helloWorldService.say();
     }

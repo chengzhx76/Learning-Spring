@@ -13,7 +13,7 @@ public class HelloWorldService {
         System.out.println(text);
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
+//    public void setText(String text) {
+//        this.text = text;
+//    }
 }

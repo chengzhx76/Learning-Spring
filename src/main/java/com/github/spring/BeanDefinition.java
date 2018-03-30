@@ -13,7 +13,7 @@ public class BeanDefinition {
 
     private Class beanClass;
 
-    private PropertyValues propertyValues;
+    private PropertyValues propertyValues = new PropertyValues();
 
     public void setBean(Object bean) {
         this.bean = bean;
