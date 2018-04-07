@@ -1,4 +1,4 @@
-package com.github.spring.test;
+package com.github.test.ioc;
 
 /**
  * @desc:

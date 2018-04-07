@@ -1,9 +1,9 @@
-package com.github.spring.test;
+package com.github.test.ioc;
 
-import com.github.spring.BeanDefinition;
-import com.github.spring.PropertyValue;
-import com.github.spring.PropertyValues;
-import com.github.spring.factory.BeanFactory;
+import com.github.chengzhx76.spring.BeanDefinition;
+import com.github.chengzhx76.spring.PropertyValue;
+import com.github.chengzhx76.spring.PropertyValues;
+import com.github.chengzhx76.spring.ioc.factory.BeanFactory;
 
 /**
  * @desc:
