@@ -1,8 +1,8 @@
 package com.github.spring.test.xml;
 
 import com.github.spring.BeanDefinition;
-import com.github.spring.io.ResourceLoader;
-import com.github.spring.xml.XmlBeanDefinitionReader;
+import com.github.chengzhx76.spring.ioc.io.ResourceLoader;
+import com.github.chengzhx76.spring.ioc.xml.XmlBeanDefinitionReader;
 
 import java.util.Map;
 

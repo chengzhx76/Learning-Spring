@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
  * @author: hp
  * @date: 2018/3/24
  */
-public class AutowriteCapableBeanFactory extends AbstractBeanFactory {
+public class AutowrieCapableBeanFactory extends AbstractBeanFactory {
 
     @Override
     protected Object doCreateBean(BeanDefinition beanDefinition) throws Exception {

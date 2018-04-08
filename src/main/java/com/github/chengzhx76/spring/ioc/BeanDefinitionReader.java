@@ -1,4 +1,4 @@
-package com.github.spring;
+package com.github.chengzhx76.spring.ioc;
 
 /**
  * @desc: 从配置文件中读取BeanDefinitionReader

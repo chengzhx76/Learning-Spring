@@ -1,9 +1,8 @@
-package com.github.test.ioc;
+package com.github.chengzhx76.spring;
 
 import com.github.chengzhx76.mode.Car;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.core.io.ClassPathResource;
 
 /**
  * Desc:
@@ -13,13 +12,14 @@ import org.springframework.core.io.ClassPathResource;
 public class LoadXml {
 
     public static void main(String[] args) {
-        ClassPathResource resource = new ClassPathResource("/bean.xml");
+//        ClassPathResource resource = new ClassPathResource("/bean.xml");
 
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
 
-        reader.loadBeanDefinitions(resource);
-        Car car = factory.getBean("car", Car.class);
+        reader.loadBeanDefinitions("/bean.xml");
+        Car car = (Car) factory.getBean("car");
+        Car car2 = (Car) factory.getBean("car");
 
         /*ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/bean.xml");
         Car car = (Car) context.getBean("car");

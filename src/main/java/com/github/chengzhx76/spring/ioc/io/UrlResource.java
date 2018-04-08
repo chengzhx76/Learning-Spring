@@ -1,4 +1,4 @@
-package com.github.spring.io;
+package com.github.chengzhx76.spring.ioc.io;
 
 import java.io.IOException;
 import java.io.InputStream;
