@@ -1,4 +1,4 @@
-package com.github.spring;
+package com.github.chengzhx76.spring.ioc;
 
 /**
  * @desc: bean的元数据

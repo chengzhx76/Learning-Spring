@@ -1,4 +1,4 @@
-package com.github.chengzhx76.controller;
+package com.github.chengzhx76.action;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

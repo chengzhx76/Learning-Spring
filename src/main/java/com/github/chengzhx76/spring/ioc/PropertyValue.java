@@ -1,4 +1,4 @@
-package com.github.spring;
+package com.github.chengzhx76.spring.ioc;
 
 /**
  * @desc: bean属性注入
