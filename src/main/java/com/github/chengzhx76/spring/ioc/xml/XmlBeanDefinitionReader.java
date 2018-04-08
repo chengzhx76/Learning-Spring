@@ -2,6 +2,7 @@ package com.github.chengzhx76.spring.ioc.xml;
 
 import com.github.chengzhx76.spring.ioc.AbstractBeanDefinitionReader;
 import com.github.chengzhx76.spring.ioc.BeanDefinition;
+import com.github.chengzhx76.spring.ioc.BeanReference;
 import com.github.chengzhx76.spring.ioc.PropertyValue;
 import com.github.chengzhx76.spring.ioc.io.ResourceLoader;
 import org.w3c.dom.Document;
@@ -74,7 +75,20 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
                 Element propertyEle = (Element) node;
                 String name = propertyEle.getAttribute("name");
                 String value = propertyEle.getAttribute("value");
-                beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, value));
+                // 值引用
+                if (value != null && !"".equals(value)) {
+                    beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, value));
+                }
+                // 对象引用
+                else {
+                    String ref = propertyEle.getAttribute("ref");
+                    if (ref == null || "".equals(ref)) {
+                        throw new IllegalArgumentException("Configuration problem : <property> '" +
+                                name + "'must specify a value or ref");
+                    }
+                    BeanReference beanReference = new BeanReference(ref);
+                    beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, beanReference));
+                }
             }
         }
     }
