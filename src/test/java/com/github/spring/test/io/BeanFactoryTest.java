@@ -1,4 +1,4 @@
-package com.github.test.ioc;
+package com.github.spring.test.io;
 
 import com.github.chengzhx76.spring.ioc.BeanDefinition;
 import com.github.chengzhx76.spring.ioc.factory.AutowrieCapableBeanFactory;
