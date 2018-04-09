@@ -9,11 +9,19 @@ public class HelloWorldService {
 
     private String text;
 
+    private UserService userService;
+
     public void say() {
         System.out.println(text);
+    }
+
+    public void sayUser() {
+        userService.sayName();
     }
 
 //    public void setText(String text) {
 //        this.text = text;
 //    }
+
+
 }

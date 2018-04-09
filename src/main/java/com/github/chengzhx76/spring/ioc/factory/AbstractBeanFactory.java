@@ -42,6 +42,16 @@ public abstract class AbstractBeanFactory implements BeanFactory {
     }
 
     /**
+     * 提前初始化bean lazy
+     * @throws Exception
+     */
+    public void preInstantiateSingletons() throws Exception {
+        for (String beanName : beanDefinitionNames) {
+            getBean(beanName);
+        }
+    }
+
+    /**
      * 初始化bean
      * @param beanDefinition
      * @return
