@@ -1,4 +1,4 @@
-package com.github.spring.test.io;
+package com.github.chengzhx76.test.spring;
 
 /**
  * @desc:

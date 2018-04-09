@@ -1,4 +1,4 @@
-package com.github.spring.test.io;
+package com.github.chengzhx76.test.spring.io;
 
 import com.github.chengzhx76.spring.ioc.io.Resource;
 import com.github.chengzhx76.spring.ioc.io.ResourceLoader;

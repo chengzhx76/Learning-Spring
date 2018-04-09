@@ -1,4 +1,4 @@
-package com.github.spring.test;
+package com.github.chengzhx76.test.spring;
 
 import com.github.chengzhx76.mode.Car;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
