@@ -18,7 +18,7 @@ public class LoadXml {
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
 
         reader.loadBeanDefinitions("/bean.xml");
-        Car car = (Car) factory.getBean("car");
+        Car car = (Car) factory.getBean("&car");
         Car car2 = (Car) factory.getBean("car");
 
         /*ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/bean.xml");
