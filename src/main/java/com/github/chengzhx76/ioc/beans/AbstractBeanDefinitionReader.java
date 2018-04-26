@@ -1,6 +1,6 @@
-package com.github.chengzhx76.spring.ioc;
+package com.github.chengzhx76.ioc.beans;
 
-import com.github.chengzhx76.spring.ioc.io.ResourceLoader;
+import com.github.chengzhx76.ioc.beans.io.ResourceLoader;
 
 import java.util.HashMap;
 import java.util.Map;

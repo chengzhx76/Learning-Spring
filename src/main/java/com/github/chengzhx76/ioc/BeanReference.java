@@ -1,4 +1,4 @@
-package com.github.chengzhx76.spring.ioc;
+package com.github.chengzhx76.ioc;
 
 /**
  * @desc:

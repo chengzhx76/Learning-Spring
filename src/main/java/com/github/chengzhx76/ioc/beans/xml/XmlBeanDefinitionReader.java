@@ -1,10 +1,10 @@
-package com.github.chengzhx76.spring.ioc.xml;
+package com.github.chengzhx76.ioc.beans.xml;
 
-import com.github.chengzhx76.spring.ioc.AbstractBeanDefinitionReader;
-import com.github.chengzhx76.spring.ioc.BeanDefinition;
-import com.github.chengzhx76.spring.ioc.BeanReference;
-import com.github.chengzhx76.spring.ioc.PropertyValue;
-import com.github.chengzhx76.spring.ioc.io.ResourceLoader;
+import com.github.chengzhx76.ioc.BeanReference;
+import com.github.chengzhx76.ioc.beans.AbstractBeanDefinitionReader;
+import com.github.chengzhx76.ioc.beans.BeanDefinition;
+import com.github.chengzhx76.ioc.beans.PropertyValue;
+import com.github.chengzhx76.ioc.beans.io.ResourceLoader;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

@@ -1,7 +1,7 @@
 package com.github.chengzhx76.test.spring.io;
 
-import com.github.chengzhx76.spring.ioc.io.Resource;
-import com.github.chengzhx76.spring.ioc.io.ResourceLoader;
+import com.github.chengzhx76.ioc.beans.io.Resource;
+import com.github.chengzhx76.ioc.beans.io.ResourceLoader;
 import com.xiaoleilu.hutool.io.IoUtil;
 
 import java.io.IOException;

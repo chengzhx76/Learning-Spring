@@ -1,8 +1,8 @@
-package com.github.chengzhx76.spring.ioc.factory;
+package com.github.chengzhx76.ioc.beans.factory;
 
-import com.github.chengzhx76.spring.ioc.BeanDefinition;
-import com.github.chengzhx76.spring.ioc.BeanReference;
-import com.github.chengzhx76.spring.ioc.PropertyValue;
+import com.github.chengzhx76.ioc.BeanReference;
+import com.github.chengzhx76.ioc.beans.BeanDefinition;
+import com.github.chengzhx76.ioc.beans.PropertyValue;
 
 import java.lang.reflect.Field;
 

@@ -1,6 +1,6 @@
-package com.github.chengzhx76.spring.ioc.factory;
+package com.github.chengzhx76.ioc.beans.factory;
 
-import com.github.chengzhx76.spring.ioc.BeanDefinition;
+import com.github.chengzhx76.ioc.beans.BeanDefinition;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,6 @@ public abstract class AbstractBeanFactory implements BeanFactory {
         return bean;
     }
 
-    @Override
     public void registerBeanDefinition(String name, BeanDefinition beanDefinition) throws Exception {
         beanDefinitionMap.put(name, beanDefinition);
         beanDefinitionNames.add(name);
